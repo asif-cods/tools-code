@@ -1,5 +1,5 @@
 
-# Brute Force Login Script(--BRUTI5--)
+# Brute Force Login Script(--BRUTI-5--)
 
 This Python script performs a basic username-password brute force attack on a target URL's login page using a provided wordlist.
 
