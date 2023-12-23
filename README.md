@@ -11,7 +11,6 @@ The script is designed to automate the process of attempting different username 
 
 - Python 3.x
 - `requests` library (Install using `pip install requests`)
-- Display banner (Install using `pip install pyfiglet`)
 
 ## Usage
 
