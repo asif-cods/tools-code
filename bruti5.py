@@ -1,12 +1,23 @@
+#!/usr/bin/env python
+
 import sys
 import getopt
 import requests
-import pyfiglet
 
-def print_banner(text):
-    display_banner = pyfiglet.figlet_format(text)
-    print(display_banner)
-    
+def banners():
+	banner = """
+                /$$$$$$$  /$$$$$$$  /$$   /$$ /$$$$$$$$/$$$$$$       /$$$$$$$                
+               | $$__  $$| $$__  $$| $$  | $$|__  $$__/_  $$_/      | $$____/                
+               | $$  \ $$| $$  \ $$| $$  | $$   | $$    | $$        | $$                     
+ /$$$$$$/$$$$$$| $$$$$$$ | $$$$$$$/| $$  | $$   | $$    | $$ /$$$$$$| $$$$$$$  /$$$$$$/$$$$$$
+|______/______/| $$__  $$| $$__  $$| $$  | $$   | $$    | $$|______/|_____  $$|______/______/
+               | $$  \ $$| $$  \ $$| $$  | $$   | $$    | $$         /$$  \ $$               
+               | $$$$$$$/| $$  | $$|  $$$$$$/   | $$   /$$$$$$      |  $$$$$$/               
+               |_______/ |__/  |__/ \______/    |__/  |______/       \______/       """
+	print (banner)       
+                                                    
+
+
 
 def main(argv):
     url = ''
@@ -46,6 +57,5 @@ def main(argv):
                                 print("Error response:", send_data_url.text)
 
 if __name__ == "__main__":
-    banner_text = "--BRUTI5-- @$if"
-    print_banner(banner_text)
+    banners()
     main(sys.argv[1:])
